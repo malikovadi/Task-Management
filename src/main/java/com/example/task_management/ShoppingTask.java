@@ -1,18 +1,13 @@
 package com.example.task_management;
-
-import javafx.fxml.FXML;
 import java.time.LocalDate;
-import java.util.Date;
 
-public class HomeworkTask implements Task
+public class ShoppingTask implements Task
 {
-
     private String taskName;
     private String description;
     private boolean completed;
     private Priority priority;
     private LocalDate deadline;
-
 
     @Override
     public boolean isCompleted()
@@ -57,7 +52,6 @@ public class HomeworkTask implements Task
         this.deadline = date;
     }
 
-
     public LocalDate getDeadline() {
         return deadline;
     }
@@ -82,8 +76,8 @@ public class HomeworkTask implements Task
     {
         if(completed)
         {
-            return "Homework: "+ this.taskName + " completed " + deadline;
+            return "Shopping: "+ this.taskName + " completed " + deadline;
         }
-        return "Homework: "+ this.taskName + " not completed " + deadline;
+        return "Shopping: "+ this.taskName + " not completed " + deadline;
     }
 }

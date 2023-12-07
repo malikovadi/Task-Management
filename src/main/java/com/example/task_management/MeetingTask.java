@@ -1,8 +1,6 @@
 package com.example.task_management;
 
-import javafx.fxml.FXML;
 import java.time.LocalDate;
-import java.util.Date;
 
 public class MeetingTask implements Task
 {

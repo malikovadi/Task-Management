@@ -22,26 +22,26 @@
         <Label layoutX="39.0" layoutY="63.0" text="Task Description" />
         <TextField fx:id="inputName" layoutX="158.0" layoutY="28.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="30.0" />
         <TextField fx:id="inputDesc" layoutX="158.0" layoutY="59.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="30.0" />
-        <RadioButton layoutX="41.0" layoutY="113.0" mnemonicParsing="false" text="LOW">
-          <toggleGroup>
-            <ToggleGroup fx:id="priority" />
-          </toggleGroup>
-        </RadioButton>
-        <RadioButton layoutX="119.0" layoutY="113.0" mnemonicParsing="false" text="MEDIUM" toggleGroup="$priority" />
-        <RadioButton layoutX="222.0" layoutY="113.0" mnemonicParsing="false" text="HIGH" toggleGroup="$priority" />
-        <Button layoutX="200.0" layoutY="332.0" mnemonicParsing="false" onAction="#onSaveButtonClick" style="-fx-background-color: orange;" text="SAVE" AnchorPane.rightAnchor="117.0" />
-        <Label fx:id="label" layoutX="13.0" layoutY="336.0" text="Label" visible="false" />
-        <RadioButton fx:id="Homework" layoutX="27.0" layoutY="165.0" mnemonicParsing="false" text="Homework ">
+        <RadioButton fx:id="Homework" layoutX="41.0" layoutY="113.0" mnemonicParsing="false" text="Homework">
           <toggleGroup>
             <ToggleGroup fx:id="task" />
           </toggleGroup>
         </RadioButton>
-        <RadioButton fx:id="Meeting" layoutX="133.0" layoutY="165.0" mnemonicParsing="false" text="Meeting" toggleGroup="$task" />
-        <RadioButton fx:id="Shopping" layoutX="236.0" layoutY="165.0" mnemonicParsing="false" text="Shopping" toggleGroup="$task" />
+        <RadioButton fx:id="Meeting" layoutX="119.0" layoutY="113.0" mnemonicParsing="false" text="Meeting" toggleGroup="$task" />
+        <RadioButton fx:id="Shopping" layoutX="222.0" layoutY="113.0" mnemonicParsing="false" text="Shopping" toggleGroup="$task" />
+        <Button layoutX="196.8" layoutY="325.0" mnemonicParsing="false" onAction="#onSaveButtonClick" style="-fx-background-color: orange;" text="SAVE" AnchorPane.rightAnchor="116.80000000000001" />
+        <Label fx:id="label" layoutX="13.0" layoutY="336.0" text="Label" visible="false" />
         <CheckBox fx:id="Completed" layoutX="200.0" layoutY="292.0" mnemonicParsing="false" onAction="#onCompleteClick" style="-fx-background-color: aqua;" text="Complete" visible="false" />
-            <Button layoutX="93.0" layoutY="332.0" mnemonicParsing="false" onAction="#onDeleteClick" style="-fx-background-color: red;" text="Delete" />
-            <DatePicker fx:id="Date" layoutX="160.0" layoutY="210.0" />
-            <Label layoutX="50.0" layoutY="214.0" prefHeight="0.0" prefWidth="87.0" text="Deadline" />
+        <Button layoutX="74.0" layoutY="327.0" mnemonicParsing="false" onAction="#onDeleteButtonClick" style="-fx-background-color: red;" text="Delete task" />
+        <DatePicker fx:id="Deadline" layoutX="160.0" layoutY="210.0" />
+        <Label layoutX="50.0" layoutY="214.0" prefHeight="0.0" prefWidth="87.0" text="Deadline" />
+        <RadioButton fx:id="Low" layoutX="41.0" layoutY="165.0" mnemonicParsing="false" text="LOW">
+               <toggleGroup>
+                  <ToggleGroup fx:id="priority" />
+               </toggleGroup></RadioButton>
+        <RadioButton fx:id="Medium" layoutX="119.0" layoutY="165.0" mnemonicParsing="false" text="MEDIUM" toggleGroup="$priority" />
+        <RadioButton fx:id="High" layoutX="222.0" layoutY="165.0" mnemonicParsing="false" text="HIGH" toggleGroup="$priority" />
+            <Button layoutX="38.0" layoutY="360.0" mnemonicParsing="false" onAction="#onDeleteCompletedButtonClick" style="-fx-background-color: red;" text="Delete Completed" />
       </children>
     </AnchorPane>
   </center>
